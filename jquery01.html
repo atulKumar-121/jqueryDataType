@@ -10,6 +10,17 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
 </script>
 <script>
+var student={
+   name:"Atul Kumar",
+   age:25,
+   roll:11750,
+   result:function()
+   {
+     return 8.56
+   }
+
+}
+$("#hello").html("<h1> Name : "+student.name+" Age : "+student.age+" Roll Number "+student.roll+" Result :"+student.result());
  var num1=25;
  var num1=25.56;
  var str1="This is a String";
@@ -19,6 +30,7 @@
  var flag2=false;
  var demo1;
 var demo2=null;
+var numbers=[1,2,3,4,5];
 console.log("num1 :",typeof num1);
 console.log("num2 :",typeof num2);
 console.log("str1 :",typeof str1);
@@ -27,7 +39,16 @@ console.log("str3 :",typeof str3);
 console.log("flag1 :",typeof flag1);
 console.log("flag2 :",typeof flag2);
 console.log("demo1 :",typeof demo1);
-console.log("demo2 :",typeof demo2); 
+console.log("demo2 :",typeof demo2);
+
+
+console.log(numbers);
+var len=numbers.length;
+console.log(len);
+console.log("number at index 2",numbers[2]);
+numbers.pop();/* removes last element of the array */
+numbers.push(7);
+console.log(numbers);
 </script>
 </body>
 </html>
